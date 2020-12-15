@@ -27,7 +27,7 @@ package adam224Collision;
 	    }
 
 	    protected void loadImage(String imageName) {
-
+	    	//System.out.println(imageName);
 	        ImageIcon ii = new ImageIcon(imageName);
 	        image = ii.getImage();
 	    }

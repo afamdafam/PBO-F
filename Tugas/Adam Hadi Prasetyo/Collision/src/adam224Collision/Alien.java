@@ -12,7 +12,7 @@ public class Alien extends Sprite {
 
     private void initAlien() {
 
-        loadImage("alien.png");
+        loadImage("src/resources/alien.png");
         getImageDimensions();
     }
 
