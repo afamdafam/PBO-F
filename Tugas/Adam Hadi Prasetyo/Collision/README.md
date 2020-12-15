@@ -90,6 +90,6 @@ Class ini adalah class utama yang digunakan untuk menjalankan program.
 # Dokumentasi
 
 
-  ![](Diag.png)
-  ![](Shoot.png)
+  ![](https://cdn.discordapp.com/attachments/428559198171955200/788259825502126110/Diag.PNG)
+  ![](https://cdn.discordapp.com/attachments/428559198171955200/788259819185897472/Shoot.PNG)
   
