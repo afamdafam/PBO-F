@@ -21,6 +21,6 @@ Pada method move() sekarang membutuhkan parameter tipe data MouseEvent. method m
 
 
   ![](https://cdn.discordapp.com/attachments/428559198171955200/789153906868486154/Diag3.PNG)
-  Link Video : 
   
+  [Link Video](https://youtu.be/5aXthfA-_zo)
   
