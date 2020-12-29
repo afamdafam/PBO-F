@@ -39,7 +39,7 @@ public class Ball extends Sprite {
         }
 
         if (x == Commons.WIDTH - imageWidth) {
-
+        		
             setXDir(-1);
         }
 

@@ -52,7 +52,12 @@ Class ini berisi properti dan fungsi yang diturunkan kepada Paddle, Brick, dan B
  
 ***
   
-##Referensi
+## Dokumentasi
+  
+![Class Diagram](FP1.png)
+
+## Referensi
 [Brick Breaker](http://zetcode.com/javagames/breakout/)
+  
 [Source Code](https://github.com/janbodnar/Java-Breakout-Game)
 
