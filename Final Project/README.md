@@ -54,8 +54,12 @@ Class ini berisi properti dan fungsi yang diturunkan kepada Paddle, Brick, dan B
   
 ## Dokumentasi
   
-![Class Diagram](FP1.png)
-
+![Class Diagram](FP1.PNG)
+  
+![Gameplay 1](FP2.PNG)
+  
+![Gameplay 2](FP3.PNG)
+  
 =======
 
 ## Referensi
