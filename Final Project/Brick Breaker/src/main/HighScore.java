@@ -11,16 +11,17 @@ import files.Files;
 import files.Level;
 import handlers.MouseHandler;
 
-public class Credits {
+public class HighScore {
 
 	
 	Rectangle userLevel = new Rectangle(50, 390, 380, 25);
+	int levels[] = {0,1,2,3,4,5,6,7};
+	int X = 100;
 
-	
-
-	public Credits() {
-	
+	public HighScore() {
+	Level.scores = Files.readScore(Files.scorePath);
 	}
+	
 	public void tick(){
 		if(MouseHandler.MOUSEDOWN) {
 			if(userLevel.contains(Controller.mousePoint)) {
@@ -29,6 +30,7 @@ public class Credits {
 			MouseHandler.MOUSEDOWN = false;
 		}
 	}
+	
 	public void render(Graphics g) {
 		g.setFont(Controller.bigFont);
 		Graphics2D g2 = (Graphics2D)g;
@@ -36,9 +38,12 @@ public class Credits {
 	    g2.setPaint(blueToBlack);
 		g.fillRect(0, 0, Frame.WIDTH, Frame.HEIGHT);
 		g.setColor(Color.black);
-		g.drawString("Credits", Frame.WIDTH/2-g.getFontMetrics().stringWidth("Credits")/2, 80);
-		g.drawString("This game is from http://www.neehaw.com",Frame.WIDTH/2-g.getFontMetrics().stringWidth("This game is from http://www.neehaw.com")/2, 150);
-		g.drawString("and modified by Adam Hadi P.", Frame.WIDTH/2-g.getFontMetrics().stringWidth("and modified by Adam Hadi P.")/2, 225);
+		g.drawString("High Scores", Frame.WIDTH/2-g.getFontMetrics().stringWidth("High Scores")/2, 80);
+		for(int i = 0; i < levels.length; i++) {
+			g.setColor(Color.black);
+			g.drawString("Level " + i +" : 		"+ Level.scores[i], Frame.WIDTH/2-g.getFontMetrics().stringWidth("Level " + i +" : 		"+ Level.scores[i])/2, X+(i*25) );
+		}
+		
 		g.drawRect(userLevel.x, userLevel.y, userLevel.width, userLevel.height);
 		g.drawString("Back to Menu", Frame.WIDTH/2-g.getFontMetrics().stringWidth("Back to Menu")/2, 410);
 		if(userLevel.contains(Controller.mousePoint)) {
@@ -47,4 +52,5 @@ public class Credits {
 			g.setColor(Color.black);
 		}
 	}
+	
 }

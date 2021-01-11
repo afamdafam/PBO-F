@@ -15,7 +15,7 @@ public class CreateLevel {
 	private Brick[] bricks;
 	private Brick[] shopBricks = new Brick[7];
 	private Rectangle[] gameOptions = { new Rectangle(5, 365, 75, 30), new Rectangle(5, 415, 50, 50),
-			new Rectangle(90, 440, 30, 30), new Rectangle(150, 440, 30, 30) };
+										new Rectangle(90, 440, 30, 30), new Rectangle(150, 440, 30, 30) };
 	private Image paintBucket;
 	private Image eraser;
 	private Image backArrow;

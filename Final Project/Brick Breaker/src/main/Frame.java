@@ -7,7 +7,7 @@ public class Frame {
 	private static JFrame frame;
 	
 	public static int WIDTH = 500;
-	public static int HEIGHT = 550;
+	public static int HEIGHT = 500;
 	
 	public static void main(String[] args) {
 		frame = new JFrame("Brick Breaker");

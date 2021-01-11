@@ -19,16 +19,15 @@ public class PickLevel {
 	
 	private int page = 1;
 	
-	Rectangle[] levels = {new Rectangle(50, 200, 75, 75), new Rectangle(150, 200, 75, 75),
-						  new Rectangle(250, 200, 75, 75), new Rectangle(350, 200, 75, 75),
-						  new Rectangle(50, 300, 75, 75), new Rectangle(150, 300, 75, 75),
-						  new Rectangle(250, 300, 75, 75), new Rectangle(350, 300, 75, 75)};
+	Rectangle[] levels = {new Rectangle(50, 150, 75, 75), new Rectangle(150, 150, 75, 75),
+						  new Rectangle(250, 150, 75, 75), new Rectangle(350, 150, 75, 75),
+						  new Rectangle(50, 250, 75, 75), new Rectangle(150, 250, 75, 75),
+						  new Rectangle(250, 250, 75, 75), new Rectangle(350, 250, 75, 75)};
 	
-	Rectangle userLevel = new Rectangle(50, 390, 380, 25);
+	Rectangle userLevel = new Rectangle(50, 350, 380, 25);
 	
 	
-	Rectangle[] arrows = {new Rectangle(5, Frame.HEIGHT-70, 50, 50),
-						  new Rectangle(Frame.WIDTH-60, Frame.HEIGHT-70, 50, 50)};
+	Rectangle[] arrows = {new Rectangle(5, Frame.HEIGHT-70, 50, 50)};
 	
 	
 
@@ -50,15 +49,8 @@ public class PickLevel {
 			for(int i = 0; i < arrows.length; i++) {
 				if(arrows[i].contains(Controller.mousePoint)) {
 					if(i == 0) {
-						if(page > 1) {
-							page--;
-						}else {
 							Controller.switchStates(Controller.STATE.MENU);
-						}
-					}else{
-						if(page < 3) {
-							page++;
-						}
+						
 					}
 					
 				}
@@ -72,7 +64,7 @@ public class PickLevel {
 	public void render(Graphics g) {
 		g.setFont(Controller.bigFont);
 		Graphics2D g2 = (Graphics2D)g;
-	    GradientPaint blueToBlack = new GradientPaint(0, 0, Color.CYAN, 0, 600, Color.BLUE);
+		GradientPaint blueToBlack = new GradientPaint(0, 0, Color.WHITE, 0, 600, Color.BLUE);
 	    g2.setPaint(blueToBlack);
 		g.fillRect(0, 0, Frame.WIDTH, Frame.HEIGHT);
 		g.setColor(Color.black);
@@ -94,7 +86,7 @@ public class PickLevel {
 			}
 		}
 		g.drawRect(userLevel.x, userLevel.y, userLevel.width, userLevel.height);
-		g.drawString("User Created Levels", Frame.WIDTH/2-g.getFontMetrics().stringWidth("User Created Levels")/2, 410);
+		g.drawString("User Created Levels", Frame.WIDTH/2-g.getFontMetrics().stringWidth("User Created Levels")/2, 370);
 		if(userLevel.contains(Controller.mousePoint)) {
 			g.setColor(new Color(200, 200, 200, 100));
 			g.fillRect(userLevel.x, userLevel.y, userLevel.width, userLevel.height);

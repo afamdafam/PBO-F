@@ -195,7 +195,7 @@ public class Game extends JPanel{
 			}
 		}
 		//End debugging
-		g.setColor(Color.yellow);
+		g.setColor(Color.GRAY);
 		g.fillRect(0, Frame.HEIGHT-50, Frame.WIDTH, 50);
 		g.setColor(Color.white);
 		g.setFont(Controller.smallFont);

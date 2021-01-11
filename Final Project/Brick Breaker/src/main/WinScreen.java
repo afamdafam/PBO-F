@@ -29,6 +29,8 @@ public class WinScreen {
 				Level.lockedLevels[Controller.level+1] = false;
 				Files.SaveProgress(Level.lockedLevels);
 			}
+			Level.scores[Controller.level] = Controller.score;
+			Files.SaveScore(Level.scores);
 		}
 	}
 	public void tick() {
@@ -53,6 +55,6 @@ public class WinScreen {
 			g.fillRect(mainMenu.x, mainMenu.y, mainMenu.width, mainMenu.height);
 			g.setColor(Color.black);
 		}
-		g.drawString("Menu", mainMenu.x + 15, mainMenu.y + 30);
+		g.drawString("NEXT", mainMenu.x + 15, mainMenu.y + 30);
 	}
 }

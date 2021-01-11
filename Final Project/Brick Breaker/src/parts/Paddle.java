@@ -18,7 +18,7 @@ public class Paddle {
 	private int x;
 	private int y;
 	
-	public int moveSpeed = 10;
+	public int moveSpeed = 7;
 	
 	public Paddle(int x, int y) {
 		this.x = x;

@@ -11,6 +11,7 @@ public class Files {
 	
 	private static String filePath = getDefaultDirectory() + "/BrickBreaker/";
 	public static String LEVELPATH = getDefaultDirectory() + "/BrickBreaker/Levels.txt";
+	public static String scorePath = getDefaultDirectory() + "/BrickBreaker/Score.txt";
 	
 	public Files() {
 		
@@ -21,6 +22,7 @@ public class Files {
 		for(int i = 0; i < 8; i++) {
 			createLevel(filePath + "CustomLevel" + i + ".txt");
 		}
+		
 	}
 	
 	public static boolean[] readFile(String filePath) {
@@ -74,7 +76,30 @@ public class Files {
 		}
 		
 	}
-
+	
+	public static int[] readScore(String filePath) {
+		int[] scores = new int[Level.MAX_LEVEL+1];
+		File file = new File(filePath);
+		if (file.exists()) {
+			Scanner scanner = null;
+			try {
+				scanner = new Scanner(file);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
+			int line = 0;
+			while (scanner.hasNextInt()) {
+				scores[line] = scanner.nextInt();
+				line++;
+			}
+			scanner.close();
+			return scores;
+		} else {
+			createScore(filePath);
+			return scores;
+		}
+	}
+	
 	public static void SaveProgress(boolean[] scores) {
 		deleteFile(filePath + "Levels.txt");
 		createFile(filePath + "Levels.txt");
@@ -85,6 +110,12 @@ public class Files {
 		deleteFile(filePath + "CustomLevel" + level + ".txt");
 		createLevel(filePath + "CustomLevel" + level + ".txt");
 		writeLevel(new File(filePath + "CustomLevel" + level + ".txt"), level, grid);
+	}
+	
+	public static void SaveScore(int[] scores) {
+		deleteFile(filePath + "Score.txt");
+		createScore(filePath + "Score.txt");
+		writeScore(new File(filePath + "Score.txt"), scores);
 	}
 	
 	public static void writeLevel(File file, int level, int[][] grid) {
@@ -137,14 +168,44 @@ public class Files {
 			writeLevel(path, grid);
 		}
 	}
-
+	
+	public static void createScore(String filePath) {
+		File path = new File(filePath);
+		if (!path.exists()) {
+			try {
+				path.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			int[] score= new int[Level.MAX_LEVEL+1];
+			for(int i = 1; i < score.length; i++) {
+				score[i] = 0;
+			}
+			score[0] = 0;
+			writeScore(path, score);
+		}
+	}
+	
 	public static void createDir(String filePath) {
 		File path = new File(filePath);
 		if (!path.exists()) {
 			path.mkdir();
 		}
 	}
-
+	
+	public static void writeScore(File file, int[] score) {
+		FileWriter writer;
+		try {
+			writer = new FileWriter(file);
+			for (int i = 0; i < score.length; i++) {
+				writer.write(score[i] + "\n");
+			}
+			System.out.println();
+			writer.close();
+		} catch (IOException e) {
+		}
+	}
+	
 	public static void writeFile(File file, boolean[] lockedLevels) {
 		FileWriter writer;
 		try {

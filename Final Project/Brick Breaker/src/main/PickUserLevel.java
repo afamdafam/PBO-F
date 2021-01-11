@@ -13,10 +13,10 @@ public class PickUserLevel {
 	
 	private Image arrow;
 		
-	Rectangle[] levels = {new Rectangle(50, 200, 75, 75), new Rectangle(150, 200, 75, 75),
-						  new Rectangle(250, 200, 75, 75), new Rectangle(350, 200, 75, 75),
-						  new Rectangle(50, 300, 75, 75), new Rectangle(150, 300, 75, 75),
-						  new Rectangle(250, 300, 75, 75), new Rectangle(350, 300, 75, 75)};
+	Rectangle[] levels = {new Rectangle(50, 150, 75, 75), new Rectangle(150, 150, 75, 75),
+			  			  new Rectangle(250, 150, 75, 75), new Rectangle(350, 150, 75, 75),
+			  			  new Rectangle(50, 250, 75, 75), new Rectangle(150, 250, 75, 75),
+			  			  new Rectangle(250, 250, 75, 75), new Rectangle(350, 250, 75, 75)};
 	
 	Rectangle userLevel = new Rectangle(50, 390, 380, 25);
 	
@@ -46,13 +46,12 @@ public class PickUserLevel {
 	public void render(Graphics g) {
 		g.setFont(Controller.bigFont);
 		Graphics2D g2 = (Graphics2D)g;
-	       GradientPaint blueToBlack = new GradientPaint(0, 0, Color.CYAN,
-	            0, 600, Color.BLUE);
+		GradientPaint blueToBlack = new GradientPaint(0, 0, Color.WHITE, 0, 600, Color.BLUE);
 	        g2.setPaint(blueToBlack);
 		g.fillRect(0, 0, Frame.WIDTH, Frame.HEIGHT);
 		g.setColor(Color.black);
 		g.drawString("Choose User Created", Frame.WIDTH/2-g.getFontMetrics().stringWidth("Choose User Created")/2, 80);
-		g.drawString("Level", Frame.WIDTH/2-g.getFontMetrics().stringWidth("LEvel")/2, 100);
+		g.drawString("Level", Frame.WIDTH/2-g.getFontMetrics().stringWidth("Level")/2, 100);
 		for(int i = 0; i < levels.length; i++) {
 			g.setColor(Color.black);
 			g.drawString("" + (i), levels[i].x+35, levels[i].y+45);

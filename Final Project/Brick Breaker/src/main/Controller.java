@@ -23,7 +23,8 @@ public class Controller extends JPanel implements Runnable {
 		WINSCREEN,
 		PICKUSERLEVEL,
 		CREATELEVEL,
-		CREDITS
+		CREDITS,
+		HIGHSCORES
 	}
 
 	private Thread thread;
@@ -39,6 +40,7 @@ public class Controller extends JPanel implements Runnable {
 	private PickLevel pickLevel;
 	private PickUserLevel pickUserLevel;
 	private static Credits credits;
+	private static HighScore highScore;
 	
 	public static Point mousePoint = new Point(0, 0);
 	public static Font bigFont = new Font("TimesRoman", Font.PLAIN, 21);
@@ -125,6 +127,10 @@ public class Controller extends JPanel implements Runnable {
 			credits.tick();
 			credits.render(g);
 			break;
+		case HIGHSCORES:
+			highScore.tick();
+			highScore.render(g);
+			break;
 		default:
 			break;
 	}
@@ -146,6 +152,9 @@ public class Controller extends JPanel implements Runnable {
 		}
 		if(state == STATE.CREDITS) {
 			credits = new Credits();
+		}
+		if(state == STATE.HIGHSCORES) {
+			highScore = new HighScore();
 		}
 	}
 	public static void switchStates(STATE state, int level) {
