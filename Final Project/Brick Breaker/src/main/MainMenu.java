@@ -1,20 +1,13 @@
 package main;
 
 import java.awt.Color;
-import java.awt.Desktop;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 import handlers.MouseHandler;
-import parts.Ball;
-import parts.Brick;
-import parts.Paddle;
 
 public class MainMenu {
 

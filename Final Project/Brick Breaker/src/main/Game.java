@@ -6,7 +6,6 @@ import java.awt.Image;
 
 import javax.swing.JPanel;
 
-import files.Files;
 import files.Level;
 import handlers.KeyHandler;
 import parts.Ball;
@@ -199,8 +198,8 @@ public class Game extends JPanel{
 		g.fillRect(0, Frame.HEIGHT-50, Frame.WIDTH, 50);
 		g.setColor(Color.white);
 		g.setFont(Controller.smallFont);
-		g.drawString("Score: " + score, 20, Frame.HEIGHT-32);
-		g.drawImage(lives, 100, Frame.HEIGHT-45, 15, 15, null);
-		g.drawString(": " + livesLeft, 120, Frame.HEIGHT-32);
+		g.drawString("Score: " + score, 20, Frame.HEIGHT-64);
+		g.drawImage(lives, 100, Frame.HEIGHT-75, 15, 15, null);
+		g.drawString(": " + livesLeft, 120, Frame.HEIGHT-64);
 	}
 }
