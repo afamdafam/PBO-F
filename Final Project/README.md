@@ -118,21 +118,21 @@ Berikut adalah perubahan signifikan yang telah terjadi pada proyek.
 ## **Asset Sprite**
 ### **Old Sprites**
 
-   ![](BrickBreakerForeground.png)
+   ![](/Images/BrickBreakerForeground.png)
 
-   ![](Ball.png)
+   ![](/Images/Ball.png)
    
-   ![](FireBall.png)
+   ![](/Images/FireBall.png)
 
-   ![](Bricks.png)
+   ![](/Images/Bricks.png)
 
-   ![](Paddle.png)
+   ![](/Images/Paddle.png)
 
-   ![](PUFireball.png)
+   ![](/Images/PUFireball.png)
 
-   ![](PUGrowth.png)
+   ![](/Images/PUGrowth.png)
 
-   ![](PUMulitBall.png)
+   ![](/Images/PUMulitBall.png)
 
 ### **New Sprites**
    
