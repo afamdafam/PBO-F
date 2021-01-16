@@ -118,40 +118,40 @@ Berikut adalah perubahan signifikan yang telah terjadi pada proyek.
 ## **Asset Sprite**
 ### **Old Sprites**
 
-   ![](/Images/BrickBreakerForeground.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911168831520789/BrickBreakerForeground.png)
 
-   ![](/Images/Ball.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911164753608704/Ball.png)
    
-   ![](/Images/FireBall.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911155455754300/FireBall.png)
 
-   ![](/Images/Bricks.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911153916313620/Bricks.png)
 
-   ![](/Images/Paddle.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911157381070889/Paddle.png)
 
-   ![](/Images/PUFireball.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911159464984626/PUFireball.png)
 
-   ![](/Images/PUGrowth.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911161264734208/PUGrowth.png)
 
-   ![](/Images/PUMulitBall.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911162824622080/PUMulitBall.png)
 
 ### **New Sprites**
    
-   ![](/Brick%20Breaker/images/BrickBreakerForeground.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911932341387264/BrickBreakerForeground.png)
 
-   ![](/Brick%20Breaker/images/Ball.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911947965169716/Ball.png)
 
-   ![](/Brick%20Breaker/images/FireBall.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911937521352714/FireBall.png)
 
-   ![](/Brick%20Breaker/images/Bricks.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911936287834123/Bricks.png)
 
-   ![](/Brick%20Breaker/images/Paddle.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911938846752768/Paddle.png)
 
-   ![](/Brick%20Breaker/images/PUFireball.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911941635702804/PUFireball.png)
 
-   ![](/Brick%20Breaker/images/PUGrowth.png)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911943695106108/PUGrowth.png)
 
-   ![](/Brick%20Breaker/images/PUMulitBall.png)
-___
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799911945519890442/PUMulitBall.png)
+
 
 ## **Class**
    
@@ -172,23 +172,23 @@ ___
 
    **Before**
 
-   ![](/images/Old.PNG)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799910983627833364/Old.PNG)
 
    **After**
    
-   ![](/images/New.PNG)
+   ![](https://cdn.discordapp.com/attachments/799909231885156362/799910950798622720/New.PNG)
 
 ***     
 # **Dokumentasi**
 ## **Class Diagram**
-![Class Diagram](/images/CDiag.PNG)
+![Class Diagram](https://cdn.discordapp.com/attachments/799909231885156362/799910826206560306/CDIag.PNG)
 
 ## **Footage Gameplay**
-![Gameplay 1](GP1.png)
+![Gameplay 1](https://cdn.discordapp.com/attachments/799909231885156362/799910108137127937/GP1.PNG)
   
-![Gameplay 2](GP2.png)
+![Gameplay 2](https://cdn.discordapp.com/attachments/799909231885156362/799910099879460904/GP2.PNG)
 
-![Gameplay 3](GP3.png)
+![Gameplay 3](https://cdn.discordapp.com/attachments/799909231885156362/799910101728493568/GP3.PNG)
 
 ## **Video**
 
