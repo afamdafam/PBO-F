@@ -184,11 +184,11 @@ ___
 ![Class Diagram](/images/CDiag.PNG)
 
 ## **Footage Gameplay**
-![Gameplay 1](GP1.pNG)
+![Gameplay 1](GP1.png)
   
-![Gameplay 2](GP2.PNG)
+![Gameplay 2](GP2.png)
 
-![Gameplay 3](GP3.pNG)
+![Gameplay 3](GP3.png)
 
 ## **Video**
 
