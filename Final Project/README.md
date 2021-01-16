@@ -192,7 +192,7 @@ Berikut adalah perubahan signifikan yang telah terjadi pada proyek.
 
 ## **Video**
 
-[Link Video](http://www.youtube.com)
+[Link Video](https://youtu.be/WLoLI5OzBik)
   
 =======
 
